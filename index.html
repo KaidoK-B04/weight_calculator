@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;600;700&display=swap" rel="stylesheet"> 
+  
+  <title>Calculate your weight</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+
+  <div class="header">
+  <h1>How much i would weight on the 
+    different stars and planets ?</h1>
+  </div>
+
+  <div class="input_section">
+  <p>Write your weight and press “Calculate”.</p>
+  <div>
+    <input class="input" type="number" id="numinput" value="kg" />
+    <button class="button" onclick="
+    cartQuantity = cartQuantity + 1;
+    console.log(`Cart quantity: ${cartQuantity}`);
+    ">Calculate</button>
+  </div>
+  </div>
+
+<div class="grid-container">
+  <div class="column"><div class="planet" id="mySun"></div><div class="textcolumn"><p>My weight on the Sun</p><p id="result">=</p></div></div>
+  <div class="column"><div class="planet" id="myMercury"></div><div class="textcolumn"><p>My weight on the Mercury</p><p id="result">=</p></div></div>
+  <div class="column"><div class="planet" id="myVenus"></div><div class="textcolumn"><p>My weight on the Venus</p><p id="result">=</p></div></div>  
+  <div class="column"><div class="planet" id="myMars"></div><div class="textcolumn"><p>My weight on the Mars</p><p id="result">=</p></div></div>
+  <div class="column"><div class="planet" id="myJupiter"></div><div class="textcolumn"><p>My weight on the Jupiter</p><p id="result">=</p></div></div>
+  <div class="column"><div class="planet" id="mySaturn"></div><div class="textcolumn"><p>My weight on the Saturn</p><p id="result">=</p></div></div>
+  <div class="column"><div class="planet" id="myUranus"></div><div class="textcolumn"><p>My weight on the Uranus</p><p id="result">=</p></div></div>
+  <div class="column"><div class="planet" id="myNeptune"></div><div class="textcolumn"><p>My weight on the Neptune</p><p id="result">=</p></div></div>
+  <div class="column"><div class="planet" id="myPluto"></div><div class="textcolumn"><p>Me on the Pluto</p><p id="result">=</p></div></div>  
+</div>
+  
+<p class="footertext">Scroll down to see more planets</p>
+
+  
+
+
+ 
+
+</body>
+</html>

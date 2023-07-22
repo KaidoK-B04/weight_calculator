@@ -1,0 +1,172 @@
+body {
+  font-family: 'Jura', sans-serif;
+  color: ghostwhite;
+  background: rgb(48,82,113);
+  background: linear-gradient(180deg, rgba(48,82,113,1) 0%, rgba(38,77,72,1) 100%);
+  margin: 0;
+}
+
+.header {
+  padding: 20px;
+  text-align: center;
+}
+
+.input_section {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #FDFAB6;
+  color: #325370;
+}
+
+.input {
+  height: 49px;
+  width: 156px;
+  color: #325370;
+  font-family:inherit;
+  font-size: 20px;
+  font-weight: 400;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-right: 50px;
+  border-bottom: 1px solid #DDD;
+  box-shadow: inset 0 1px 2px rgba(26, 24, 133, 0.39);
+}
+
+
+.button {
+  height: 49px;
+  width: 156px;
+  background-color: #325370;
+  color: ghostwhite;
+  font-family:inherit;
+  font-size: 20px;
+  font-weight: 400;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+  background-color: #5a95c9;
+  box-shadow: 0px 4px 8px rgba(32, 29, 176, 0.4);
+  color: #ffffff;
+  transform: translateY(1px);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  padding: 10px;
+}
+
+/*.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.94);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  color: #325370;
+}*/
+
+/*.column {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  border-bottom: 5px solid #FDFAB6;
+  color: black;
+}*/
+.column {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  padding-left: 20px;
+}
+.planet {
+  min-height: 100px;
+  min-width: 100px;
+  background-color: darkorange;
+  border-radius: 50%;
+}
+#mySun {
+  background: linear-gradient(180deg, #f7370c, #FFF738);
+  background-size: 100% 100%;
+}
+#myMercury {
+  background: linear-gradient(180deg, #7A83CC, #D1D1D1);
+  background-size: 100% 100%;
+}
+#myVenus {
+  background: linear-gradient(180deg, #E48A20, #FFD770);
+  background-size: 100% 100%;
+}
+#myMars {
+  background: linear-gradient(180deg, #E44F20, #FEB674);
+  background-size: 100% 100%;
+}
+#myJupiter {
+  background: linear-gradient(180deg, #c99039, #d8ca9d);
+  background-size: 100% 100%;
+}
+#mySaturn {
+  background: linear-gradient(180deg, #ceb8b8, #ead6b8);
+  background-size: 100% 100%;
+}
+#myUranus {
+  background: linear-gradient(180deg, #2e84ce, #93cdf1);
+  background-size: 100% 100%;
+}
+#myNeptune {
+  background: linear-gradient(180deg, #274687, #5b5ddf);
+  background-size: 100% 100%;
+}
+#myPluto {
+  background: linear-gradient(180deg, #968570, #ccba99);
+  background-size: 100% 100%;
+}
+#myPluto:hover {
+  background-size: 100% 100%;
+  background-image:url('pissets.jpeg');
+}
+.textcolumn {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-evenly;
+  margin-left: 30px;
+}
+
+.footertext {
+  text-align: center;
+}
+
+
+
+
+/*MEDIA QUERIS*/
+
+@media only screen and (max-width:1024px) {
+  .grid-container {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media only screen and (max-width:767px) {
+  .grid-container {
+    grid-template-columns: auto auto;
+  }
+  .input_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width:480px) {
+  .grid-container {
+    grid-template-columns: auto;
+  }
+}
